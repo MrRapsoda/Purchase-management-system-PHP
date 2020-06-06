@@ -1,0 +1,310 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper .head a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-content .user-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.wrapper .wrapper-content {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper-content .main-content {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    box-sizing: border-box;
+    /*overflow: scroll;*/
+}
+
+.wrapper .head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background: rgb(243, 243, 243);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.head #toggle_button {
+    cursor: pointer;
+}
+
+.wrapper .dashLeft {
+    top: 0;
+    bottom: 0;
+    height: auto;
+    width: 250px;
+    background: rgb(66, 66, 66);
+}
+
+.dashLeft .frmHead {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    color: rgb(243, 243, 243);
+    background: linear-gradient(90deg, rgba(67, 189, 186, 1) 0%, rgba(84, 119, 214, 1) 100%);
+}
+
+.dashLeft .dropdown-bt {
+    border: none;
+    box-sizing: border-box;
+    padding: 15px;
+    padding-left: 25px;
+    width: 100%;
+    text-align: left;
+    font-size: 0.9em;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-bt #ddicon {
+    float: right;
+}
+
+.dashLeft .dropdown-container {
+    display: none;
+    background-color: rgb(90, 90, 90);
+}
+
+.dashLeft .dropdown-container a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    padding-left: 30px;
+    font-size: 0.8em;
+}
+
+.dashLeft .dropdown-bt .active {
+    color: #44B8BC;
+}
+
+.dashLeft .foot {
+    display: none;
+    /*position: absolute;
+    bottom: 0;*/
+    color: gray;
+    padding: 30px;
+    width: 100%;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 0.8em;
+}
+
+.foot span {
+    margin-left: 8px;
+}
+
+.main-content .user-card {
+    width: 25%;
+    margin-right: 25px;
+    height: auto;
+    text-align: center;
+    border: 1px solid rgb(223, 223, 223);
+    -webkit-box-shadow: -1px 4px 29px -17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 4px 29px -17px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 4px 29px -17px rgba(0, 0, 0, 0.75);
+}
+
+.user-card .card-top {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(67, 189, 186, 1) 0%, rgba(84, 119, 214, 1) 100%);
+    margin-bottom: 50px;
+}
+
+.card-top .profile-photo {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: #F3F3F3;
+    border-radius: 50%;
+    right: 50%;
+    transform: translate(50%, 25%);
+}
+
+.user-card .personal-info {
+    height: auto;
+    text-align: left;
+    font-size: 1.1em;
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+    color: rgb(112, 112, 112);
+}
+
+.user-card .personal-info .bt-cerrar-sesion {
+    background: linear-gradient(90deg, #e52d27, #b31217);
+    display: flex;
+    font-size: 0.8em;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.main-content {
+    display: flex;
+}
+
+.card-top #setting-icon {
+    float: right !important;
+    margin-top: 10px !important;
+    margin-right: 10px !important;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.main-content .inventary-status {
+    width: 30%;
+    height: 200px;
+    margin-right: 25px;
+    border: 1px solid rgb(223, 223, 223);
+    -webkit-box-shadow: -1px 4px 29px -17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 4px 29px -17px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 4px 29px -17px rgba(0, 0, 0, 0.75);
+}
+
+.main-content .sc-status {
+    width: 45%;
+    height: 200px;
+    border: 1px solid rgb(223, 223, 223);
+    -webkit-box-shadow: -1px 4px 29px -17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 4px 29px -17px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 4px 29px -17px rgba(0, 0, 0, 0.75);
+}
+
+.inventary-status .card-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(67, 189, 186, 1) 0%, rgba(84, 119, 214, 1) 100%);
+}
+
+.sc-status .card-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(67, 189, 186, 1) 0%, rgba(84, 119, 214, 1) 100%);
+}
+
+.card-top #launch-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px !important;
+    margin-right: 10px !important;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.inventary-status .data-container {
+    display: flex;
+    padding: 25px;
+    width: 100%;
+}
+
+.sc-status .data-container {
+    display: flex;
+    padding: 25px;
+    width: 100%;
+}
+
+.data-container .data-in,
+.data-out,
+.data-mid {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.data-in h1 {
+    color: rgb(57, 116, 57);
+}
+
+.data-out h1 {
+    color: rgb(149, 62, 62);
+}
+
+.data-container .data-in {
+    border-right: 1px solid gray;
+}
+
+.data-container .data-mid {
+    border-right: 1px solid gray;
+}
+
+.sc-status .card-top {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(67, 189, 186, 1) 0%, rgba(84, 119, 214, 1) 100%);
+}
+
+.head .head-bt-log-out {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    color: rgb(165, 56, 56);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+    .dashLeft {
+        z-index: 1;
+        position: fixed;
+        display: none;
+    }
+    .head #toggle_button {
+        margin-left: 250px;
+        cursor: pointer;
+    }
+    .main-content {
+        flex-direction: column;
+    }
+    .main-content .user-card,
+    .main-content .sc-status,
+    .main-content .inventary-status {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}

@@ -1,0 +1,11 @@
+.main-content .master-flex-container {
+    width: 100%;
+}
+
+.main-content .master-flex-container .insert-products {
+    width: 50%;
+}
+
+.main-content .master-flex-container .table-products {
+    width: 50%;
+}
